@@ -3,6 +3,11 @@ body {
     font-family: 'Red Hat Display', sans-serif;
 }
 
+#illustration {
+    max-width: 375px;
+    height: auto;
+}
+
 h1 {
     font-weight: 900;
 }
@@ -21,20 +26,28 @@ h2 {
 }
 
 .summary-copy {
-    max-width: 450px;
+    max-width: 375px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .plan {
     display: flex;
-}
-
-.annual {
-    display: inline;
-}
-
-p .annual {
-    display: block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+/* Mobile View */
+@media (max-width: 375px) {
+body {
+    background-color: hsl(225, 100%, 94%);
+}
+
+}
