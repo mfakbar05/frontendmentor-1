@@ -1,0 +1,40 @@
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.summary-copy {
+    max-width: 450px;
+}
+
+.plan {
+    display: flex;
+}
+
+.annual {
+    display: inline;
+}
+
+p .annual {
+    display: block;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
