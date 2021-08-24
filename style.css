@@ -1,11 +1,15 @@
 body {
-    font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-position: center top;
+    background-repeat: repeat-x;
+    background-color: hsl(225, 100%, 94%);
 }
 
 #illustration {
-    max-width: 375px;
+    max-width: 350px;
     height: auto;
+    border-radius: 25px 25px 0px 0px;
 }
 
 h1 {
@@ -15,6 +19,17 @@ h1 {
 h2 {
     font-size: 16px;
     font-weight: 700;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+}
+
+a {
+    font-size: 16px;
 }
 
 .container {
@@ -23,26 +38,71 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: white;
+    margin: auto auto auto auto;
+    max-width: 350px;
+    border-radius: 25px;
+    margin-top: 5%;
 }
 
 .summary-copy {
-    max-width: 375px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0px 25px 10px 25px;
+    margin-bottom: 20px;
 }
 
 .plan {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     background-color: hsl(225, 100%, 98%);
-    padding-left: 50px;
-    padding-right: 50px;
+    margin: 10px 0px;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.plan a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    
+}
+
+.plan a:hover {
+    color: hsl(245, 63%, 64%);
+    text-decoration: none;
+}
+
+.annual {
+    margin: 0 37.5px 0 12.5px;
+}
+
+.proceed {
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0px;
+    padding: 15px 68px;
+    border-radius: 10px;
+    box-shadow: 0px 25px 30px -10px hsl(224, 15%, 85%);
+}
+
+.proceed:hover {
+    background-color: hsl(245, 63%, 64%)
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 700;
+    margin: 20px 0px 30px 0px;
+}
+
+.cancel:hover {
+    color: black;
+}
+
+.attribution { font-size: 11px; text-align: center; margin: 15px 0px 5% 0px;}
+    .attribution a { color: hsl(228, 45%, 44%); font-size: 11px; }
 
 /* Mobile View */
 @media (max-width: 375px) {
