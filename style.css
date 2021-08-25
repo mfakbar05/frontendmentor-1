@@ -9,7 +9,6 @@ body {
 #illustration {
     height: auto;
     border-radius: 25px 25px 0px 0px;
-    position: relative;
 }
 
 h1 {
@@ -43,6 +42,7 @@ a {
     max-width: 450px;
     border-radius: 25px;
     margin-top: 5%;
+    box-shadow: 5px 15px 15px hsl(224, 35%, 85%);
 }
 
 .summary-copy {
