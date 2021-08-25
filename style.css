@@ -7,9 +7,9 @@ body {
 }
 
 #illustration {
-    max-width: 350px;
     height: auto;
     border-radius: 25px 25px 0px 0px;
+    position: relative;
 }
 
 h1 {
@@ -39,14 +39,14 @@ a {
     align-items: center;
     text-align: center;
     background-color: white;
-    margin: auto auto auto auto;
-    max-width: 350px;
+    margin: auto;
+    max-width: 450px;
     border-radius: 25px;
     margin-top: 5%;
 }
 
 .summary-copy {
-    padding: 0px 25px 10px 25px;
+    padding: 0px 55px 0px 55px;
     margin-bottom: 20px;
 }
 
@@ -56,7 +56,7 @@ a {
     align-items: center;
     background-color: hsl(225, 100%, 98%);
     margin: 10px 0px;
-    padding: 10px 20px;
+    padding: 20px 40px;
     border-radius: 10px;
 }
 
@@ -72,7 +72,7 @@ a {
 }
 
 .annual {
-    margin: 0 37.5px 0 12.5px;
+    margin: 0 45px 0 25px;
 }
 
 .proceed {
@@ -81,9 +81,9 @@ a {
     color: white;
     text-decoration: none;
     margin: 10px 0px;
-    padding: 15px 68px;
+    padding: 15px 98px;
     border-radius: 10px;
-    box-shadow: 0px 25px 30px -10px hsl(224, 15%, 85%);
+    box-shadow: 0px 30px 35px -10px hsl(224, 15%, 85%);
 }
 
 .proceed:hover {
@@ -94,7 +94,7 @@ a {
     color: hsl(224, 23%, 55%);
     text-decoration: none;
     font-weight: 700;
-    margin: 20px 0px 30px 0px;
+    margin: 20px 0px 45px 0px;
 }
 
 .cancel:hover {
@@ -107,7 +107,42 @@ a {
 /* Mobile View */
 @media (max-width: 375px) {
 body {
-    background-color: hsl(225, 100%, 94%);
+    background-image: url("images/pattern-background-mobile.svg");
+}
+
+.container {
+    max-width: 325px;
+}
+
+#illustration {
+    max-width: 325px;
+    height: auto;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.summary-copy {
+    padding: 0px 25px 10px 25px;
+    margin-bottom: 20px;
+}
+
+.plan {
+    margin: 10px 0px;
+    padding: 10px 20px;
+}
+
+.annual {
+    margin: 0 37.5px 0 12.5px;
+}
+
+.cancel {
+    margin: 20px 0px 30px 0px;
+}
+
+.proceed {
+    margin: 10px 0px;
+    padding: 15px 68px;
+    border-radius: 10px;
+    box-shadow: 0px 25px 30px -10px hsl(224, 15%, 85%);
 }
 
 }
